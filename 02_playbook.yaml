@@ -1,0 +1,6 @@
+- name: Ping Server in Web group
+  hosts: web
+  gather_facts: false
+  tasks:
+    - name: Ping the server
+      ansible.builtin.ping
