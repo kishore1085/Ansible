@@ -1,5 +1,5 @@
 - name : ping 
   host : web
-  tasks: # module colletion
+  tasks: # tsk = module = collection
     -name : ping the server 
      ansible.builtin.ping
