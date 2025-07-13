@@ -1,0 +1,19 @@
+- name: Datatyepes
+  hosts: local
+  connection: local
+  vars:
+    course_name: "Devops with AWS" # String 
+    duration: 120 # int 
+    topics:
+    - linux
+    - Shell
+    - ansible
+    live: true # bollean
+    tools:
+      ci: jenkins
+      cloud: AWS
+      containerization: docker
+  tasks:
+  - name: print the couse details
+    ansible.builtin.debug:
+      msg: "Hello we are telling {{course_name}} and duration of course is {{duration}} , topics are {{topics}}  with live session is {{live}} using multiple tools {{tools}}"
