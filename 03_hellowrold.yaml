@@ -1,9 +1,9 @@
 - name: Hello world
   hosts: web
   gather_facts: false
- tasks:
-  - name: Print hello world
-    ansible.builtin.debug:
+  tasks:
+    - name: Print hello world
+      ansible.builtin.debug:
       msg: "Kishore Devisetti"
 
  
