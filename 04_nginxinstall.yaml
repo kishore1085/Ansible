@@ -1,6 +1,6 @@
 - name: nginx installation
   hosts: web
-  become: yes # -b 
+  become: yes # -b when you need sudo you should use become: yes 
   tasks:
     - name: install nginx
       ansible.builtin.package:
