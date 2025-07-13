@@ -4,6 +4,6 @@
   tasks:
     - name: Print hello world
       ansible.builtin.debug:
-      msg: "Kishore Devisetti"
+        msg: "Kishore Devisetti"
 
  
